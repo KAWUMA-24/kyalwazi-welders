@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Welding Services</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+        <p>KYALWAZI WELDING COMPANY</p>
+    </header>
+
+    <main>
+        <h1>Place Your Order</h1>
+        <p>Fill out the form below to place your order.</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="28943bad-1526-46df-b11f-da177ce60bba">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Service Required:</label>
+            <select id="service" name="service" required>
+                <option value="welding">Welding</option>
+                <option value="fabrication">Fabrication</option>
+                <option value="repair">Repair</option>
+            </select>
+
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        Location: Wakiso, Central Region, Uganda</p>
+        <p> Nsumbi,Kyebando </p>
+        <p>   Tel:+256 752969637</p>
+    </footer>
+</body>
+</html>
